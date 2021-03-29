@@ -26,5 +26,28 @@ jQuery($("#username"))
 	<body>页面展现的内容</body>
 2) CSS
 3) 
+
+
+
+绝对路径方式访问: 磁盘目录/文件
+file:// -- 文件协议
+
+
+http://127.0.0.1:8848/cgb2102/day01/hello.html
+http:// -- 协议头
+127.0.0.1 -- ip地址
+8848 -- 端口
+/cgb2102/day01/ -- 虚拟路径
+FTP和HTTP协议的区别：
+目的不同：
+ftp 文件传输协议 远程两台计算机如何传输文件
+http 超文本的传输协议， 网页，从别人的服务器抓取内容来展现
+https 安全的http，加密base64,网页加载速度慢, 可以预防DDOS攻击.
+
+
+
+CSS 层叠样式表 (Cascading Style Sheets)
+配合html技术来实现网页的美化
+
 	
 
