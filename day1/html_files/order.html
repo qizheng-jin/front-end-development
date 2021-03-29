@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Order</title>
+		<!-- 全局的样式 -->
+		<style>
+			body{
+				font-size: 8px;/*字体大小八个像素*/
+				/* 设置一个边线, 看看元素的边界, 调试完再删除 */
+				border: 5px;
+				width: 290px;
+			}
+			/* 共享样式必须要取class属性 class属性css用.访问 */
+			.me{
+				padding-left: 90px;
+			}
+			.please{
+				font-size: 22px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div>顾客联</div>
+		<!-- html换行符 -->
+		<br> 
+		<div class="please">请您留意取餐的账号单</div>
+
+		<div class="me">自取顾客联</div>
+		<div>永和大王(北三环西路店)</div>
+		<div>010-123456789</div>
+		<div class="me">--结账单--</div>
+		<div class="please">账单号: P123456</div>
+		<div>账单类型: 堂食</div>
+		<div>人数: 1</div>
+		<div>收银员: 张静</div>
+		<div>开单时间: 2021-03-09 07:09:09</div>
+		<div>结账时间: 2021-03-09 08:09:09</div>
+		
+		<!--hr:定义水平线 虚线:dashed, 默认实线solid, 换线性 -->
+		<hr style="border: 1px dashed;"/>
+		<!-- 
+			表格 -- table
+			表格头 -- th
+			表格内容 -- tr
+			单元格 -- td
+			
+			优点: 不需要写排版代码,它会自适应
+			缺点: 门户网站早期都是table布局,当前所有标签, 必须解析完,才在页面展现,页面闪现一下
+			
+		 -->
+		 
+		<table border="0">
+			<tr>
+				<!-- 行间距改一行就行了 -->
+				<td width="30" align="center">数量</td>
+				<td width="150" align="center">品项</td>
+				<td width="70" align="center">金额</td>
+			</th>
+			<tr>
+				<td valign="top">1</td>
+				<td align="center">
+					玉米肉松蛋饼2P<br />
+					1X -- 玉米肉松蛋饼<br />
+					1X -- 现磨豆浆(热甜)<br />
+				</td>
+				<td valign="top" align="right">8.00</td>
+			</tr>
+		</table>
+		<hr style="border: 1px dashed;"/>
+		<table border="0">
+			<tr>
+				<td width="50" align="left">合计</td>
+				<td width="205" align="right">8.00</td>
+			</tr>
+			<tr>
+				<td>微支付</td>
+				<td align="right">8.00</td>
+			</tr>
+		</table>
+		<hr style="border: 1px dashed;" />
+		打印时间: 2021-03-09 08:09:09
+		<hr style="border: 1px dashed;" />
+		
+		<div style="padding-top: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp根据相关税法规定.........</div>
+		<div align="center">
+			<!-- 用相对路径访问图片 -->
+			<img  src="../images/qr.png" alt="QRCode">
+		</div>
+		<div>官网: www.baidu.com</div>
+		<div>加盟热线: 123456789</div>
+		<br><br>
+	</body>
+</html>
