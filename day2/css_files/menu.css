@@ -1,0 +1,28 @@
+.imgstyle{
+	/* 
+		要想图片变成圆形，就设计border的半径大于图片半径
+	 */
+	border-radius: 125px;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	/* float浮动，left，元素紧跟着不换行 */
+	float: left; 
+	margin-right: 10px;/*外部空白, margin四周变空白*/
+	background-color: cadetblue;/*设置背景色*/
+	padding: 5px 10px 5px 10px;  /*四周隔开 上右下左*/
+	color: white;
+	border-radius: 8px;
+}
+li:hover{
+	/* 鼠标操作事件: 拖动/移动/单机/双击,鼠标移入,鼠标移出 */
+	background-color: #ee1166;
+}
+a{
+	text-decoration: none;
+	color: white;
+}

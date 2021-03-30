@@ -1,0 +1,23 @@
+body{
+	font-size: 8px;/*字体大小八个像素*/
+	/* 设置一个边线, 看看元素的边界, 调试完再删除 */
+	/* border属性必须设置边框宽度和边框类型才能显示 */
+	border: 0px solid red;
+	width: 290px;
+}
+/* 共享样式必须要取class属性 class属性css用.访问 */
+.me{
+	padding-left: 90px;
+}
+.please{
+	font-size: 22px;
+	font-weight: bold;
+}
+#kaidan{
+	font-weight: bold;
+}
+.span{
+	font-size: 22px;
+	font-weight: bold;
+	border: 0px solid red;
+}
