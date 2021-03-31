@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>汽车对象</title>
+	</head>
+	<body>
+		<h1>保时捷718, Cayman Tm, 红色, 641000元</h1>
+		<script>
+			// js定义对象
+			var car = new Object();
+			//定义属性
+			car.name = "Porsche718";
+			console.log(car);
+			
+			car.type = "Cayman Tm";
+			console.log(car);
+			
+			car.color = "红色";
+			console.log(car);
+			
+			//js定义对象同时初始化属性
+			var car2 = {
+				//属性值是键值对<k,v>, 语法: 键:值
+				name: "BMW820", //!!!后面不能加分号, 多个属性之间使用逗号
+				type: "nice",
+				color: "black",
+				toString: function(){//构建方法的时候想使用之前定义的属性,必须要加关键词this
+					return "name: "+this.name+", "+
+					  "type: " + this.type + ", " +
+					  "color: " + this.color;
+				}
+			}
+			console.log(car2.toString());
+			// var a = {} a是函数
+			// var a = [] a是数组
+			
+			//动态的添加函数
+			car2.show = function(){
+				return this.name +", " +this.type + ", " + this.color;
+			}
+			console.log(car2.show());
+		</script>
+	</body>
+</html>

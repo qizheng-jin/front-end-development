@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>bootstrap</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="container">
+		<h1>学生管理系统</h1>
+		<form action="test_form.html" method="get" class="form-group">
+			<label>姓名: </label>
+			<input name="name" type="text" size="25" class="form-control" autocomplete="off" placeholder="请输入姓名"><br>
+			<label>年龄: </label>
+			<input name="age" type="number" size="25" class="form-control" autocomplete="off" placeholder="请输入年龄"><br>
+			<div class="form-group">
+			<label>性别: </label>
+			<!--
+				单选框, 必须和名字一致, 会自动变成一组
+				单选框的修饰,和汉字不换行, radio-inline, inline在一行
+			-->
+			<input name="gender" type="radio" value="male" class="radio-inline">男
+			<input name="gender" type="radio" value="female" class="radio-inline">女<br>
+			</div>
+			<label>邮箱地址:</label>
+			<input name="email" type="email" size="25" class="form-control" autocomplete="off"><br>
+			<div class="form-group">
+			<label>爱好:</label>
+			<input class="checkbox-inline" name="hobby" type="checkbox" value="吃饭">吃饭
+			<input class="checkbox-inline" name="hobby" type="checkbox" value="睡觉">睡觉
+			<input class="checkbox-inline" name="hobby" type="checkbox" value="打dota">打dota<br>
+			</div>
+			<div class="form-group">
+			<label>学历:</label>
+			<select name="education">
+				<option>小学</option>
+				<option>初中</option>
+				<option>中专</option>
+				<option>大专及以上</option>
+			</select><br>
+			</div>
+			<input class="btn btn-success" type="submit" value="提交">
+			<input class="btn btn-danger" type="button" value="取消">
+		</form>
+		</div>
+		
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		      <script src="https://code.jquery.com/jquery.js"></script>
+		      <!-- 包括所有已编译的插件 -->
+		      <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -53,3 +53,12 @@ Git 命令
 ###表单(form)
 表单标签的内容可以传递到后台程序
 形成前端和后端的沟通渠道
+form 元素包含一个或多个表单元素，比如：
+
+button
+input
+keygen
+object
+output
+select
+
