@@ -16,6 +16,13 @@ src 的内容，是页面必不可少的一部分，是引入。href 的内容�
 ### 动态网站技术 javascript (js)
 html和css无法交互, 动态去改变js作用
 
+### bootstrap表单技术
+1. class = "form-group" -- 提高行间隔
+2. class = "container" -- body常用的class提高四周的间距
+3. class = "radio-inline checkbox-inline" -- 提高单选和多选选项之间的间距
+4. class = "btn btn-success btn-danger" 红绿按钮 
+
+
 javascript 和 java的关系:
 1. 两者没有任何关系
 2. js是浏览器语言,脚本语言,弱语言,动态语言
@@ -63,6 +70,15 @@ var 函数名 = (参数1, 参数2...., 参数n) =>{
 }
 调用: 函数名(参数列表);
 
+### JS创建对象的思路
+/**
+ * 在JS中，创建对象（Create Object）并不完全是我们时常说的创建类对象，
+ * JS中的对象强调的是一种复合类型，JS中创建对象及对对象的访问是极其灵活的。
+	JS对象是一种复合类型，它允许你通过变量名存储和访问，
+	换一种思路，对象是一个无序的属性集合，
+	集合中的每一项都由名称和值组成（听起来是不是很像我们常听说的HASH表、字典、键/值对？），
+	而其中的值类型可能是内置类型(如number,string)，也可能是对象。
+ */
 
 ### 小结
 1. 引入bootstrap样式
