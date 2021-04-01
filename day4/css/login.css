@@ -1,0 +1,10 @@
+.container{
+	width: 30%;
+	margin-top: 10%;
+	margin-left: 40%;
+	/* border: 1px solid red; */
+}
+
+#login_success{
+	display: none;
+}
