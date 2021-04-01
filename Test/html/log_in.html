@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登陆界面</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container"> 
+			<div style="display: none;" id="thisDiv">
+				登陆成功
+			</div>
+			<div class="form-group">
+				<label>账号</label>
+				<input type="text" id="account" name="account" autocomplete="off" placeholder="请输入账号">
+			</div>
+			<div class="form-group">
+				<label>密码</label>
+				<input type="password" id="password" name="password" autocomplete="off" placeholder="请输入密码">
+			</div>
+			<div class = "form-group">
+				<button class="btn btn-success" id="submit" onclick="btnSubmit()">登录</button>
+				<buttin class="btn btn-danger" id="cancel">取消</buttin>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+		<script>
+			// function btnSubmit(){
+			// 	var account =$("#account");
+			// 	$("#thisDiv").css("display", "block").css("color", "red");
+			// 	$("#thisDiv").text(account.val() + "登录成功");
+			// }
+			
+			$("#cancel").click(function(){
+				$("#account").val('');
+				$("#password").val('');
+			});
+			var submitBtn = document.getElementById("submit");
+			submitBtn.onclick = function(){
+				var account = document.getElementById("account");
+				var thisDiv = document.getElementById("thisDiv");
+				thisDiv.style = "display: block;";
+				thisDiv.innerText = account.value + "登录成功!";
+			}
+		</script>
+	</body>
+</html>

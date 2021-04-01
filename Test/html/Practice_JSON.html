@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JSON</title>
+	</head>
+	<body>
+		<h1>JSON和Javascript对象的转化</h1>
+		<div id="firstDiv"></div>
+		<div id="secondDiv"></div>
+		<div id="hiddenDiv" style="width:80px;height:80px;display:none;background-color:blue;">ABC</div>
+		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+		<script>
+			var JSONstr1 = '[{"name": "小明", "age": 18,"gender": "male"},{"name": "小芳","age": 20,"gender": "female"}]';
+			var JSobj1 = JSON.parse(JSONstr1);
+			
+			$("#firstDiv").text(printAllName());
+			$("#hiddenDiv").fadeIn();
+			function printAllName(){
+				var line = "";
+				for(var i=0; i<JSobj1.length; i++){
+					line += JSobj1[i].name;
+				}
+				return line;
+			}
+		</script>
+	</body>
+</html>
