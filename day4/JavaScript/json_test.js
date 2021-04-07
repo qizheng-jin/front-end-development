@@ -1,3 +1,7 @@
+
+
+
+
 var jsonstr ='[{"p":17999.00,"op":"17999.00","cbf":"0","id":"J_100010378153","m":"100000.00"}]';
 var obj = JSON.parse(jsonstr);
 var price = obj[0].p;

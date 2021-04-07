@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vue的返回值</title>
+	</head>
+	<body>
+		<div id="app">
+			{{ msg }}
+			<h1 v-if="false">helloworld</h1>
+			<ul>
+				<li v-for="value in name">
+					{{ value }}
+				</li>
+			</ul>
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script>
+			var first = new Vue({
+				el: "#app",
+				data: {
+					msg: "Hello Vue",
+					name: ["小明", "小红", "小张"]
+				},
+				functions: {
+					function1: function(){
+						return{
+							msg: "Hello msg"
+						}
+					},
+				}
+			})
+		</script>
+	</body>
+</html>

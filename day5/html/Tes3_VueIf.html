@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="if">
+			<div v-if="age < 18">
+				{{name}}未成年
+			</div>
+			<div v-else>
+				{{name}}成年了
+			</div>
+			<!-- Vue数组的读取和使用 -->
+			<p>{{hobby}}, {{hobby.length}}, {{hobby[0]}}</p>
+			<!-- Vue for循环 -->
+			<div v-for="(value, key) in hobby">
+				{{key}}:{{value}}
+			</div>
+			<div v-for="(value, key) in friend">
+				{{key}}:{{value.name}}
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="../javascript/Test3_VueIf.js"></script>
+	</body>
+</html>
